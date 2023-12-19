@@ -1,14 +1,14 @@
-import { useContext } from "react";
-import { authTocken } from "../context/AuthContext";
+import { useContext } from "react"
+import { authTocken } from "../context/AuthContext"
 
 const CompanyAddForm = () => {
-  const { tocken } = useContext(authTocken);
-
+  const tocken=useContext(authTocken);
+  console.log(tocken)
   return (
     <>
-      {tocken && <input value={tocken} />}
+      <p>{JSON.stringify(tocken)}</p>
     </>
-  );
-};
+  )
+}
 
-export default CompanyAddForm;
+export default CompanyAddForm

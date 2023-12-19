@@ -6,9 +6,10 @@ const App = () => {
   const [tocken,setTocken]=useState<string>('')
   const [auth,setAuth]=useState<boolean>(true);
   const handleSubmit = (tocken:string) =>{
-        setTocken(tocken);
-        setAuth(false)
+    setTocken(tocken);
+    setAuth(false)
   }
+
 
   return (
     <>
@@ -23,3 +24,5 @@ const App = () => {
 }
 
 export default App
+
+
